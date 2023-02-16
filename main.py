@@ -54,7 +54,17 @@ def loopthread(message):
 @app.on_message(filters.command(["start"]))
 def send_start(client: pyrogram.client.Client, message: pyrogram.types.messages_and_media.message.Message):
     app.send_message(message.chat.id, f"__👋 Hi **{message.from_user.mention}**, i am Link Bypasser Bot, just send me any supported links and i will you get you results.\nCheckout /help to Read More__",
-    reply_markup=InlineKeyboardMarkup([[ InlineKeyboardButton("🌐 Source Code", url="https://github.com/bipinkrish/Link-Bypasser-Bot")]]), reply_to_message_id=message.id)
+    reply_markup=InlineKeyboardMarkup([[
+        InlineKeyboardButton(" Developer ", url='https://t.me/Andhramovies_owner')
+        ],[
+        InlineKeyboardButton(' Updates', url='https://t.me/Andhra_Bots'),
+        InlineKeyboardButton(' Support', url='https://t.me/Andhra_Telugu_Movies')
+        ],[
+        InlineKeyboardButton(" Join Our Movies Bot ", url='https://t.me/andhramoviesbot')
+        ],[
+        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://youtube.com/@telugumoviedost7979')
+        ]
+        ]), reply_to_message_id=message.id)
 
 
 # help command
